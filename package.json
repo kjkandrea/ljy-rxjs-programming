@@ -2,14 +2,17 @@
   "name": "ljy-rxjs-programming",
   "description": "RxJS 프로그래밍 (이종욱, 안재하 저) 코드필기",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "start": "nodemon"
+    "start": "nodemon --config nodemon.json 02_basic/Observable.ts"
   },
   "dependencies": {
     "rxjs": "^7.4.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.14"
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/node": "^16.11.6",
+    "nodemon": "^2.0.14",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
   }
 }
