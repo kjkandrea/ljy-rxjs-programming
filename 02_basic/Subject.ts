@@ -12,3 +12,5 @@ subject.subscribe({
 
 subject.next('🧟')
 subject.next('🦹')
+subject.complete()
+subject.next('🐻')
