@@ -1,0 +1,11 @@
+{
+  "name": "ljy-rxjs-programming",
+  "description": "RxJS 프로그래밍 (이종욱, 안재하 저) 코드필기",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "rxjs": "^7.4.0"
+  }
+}
