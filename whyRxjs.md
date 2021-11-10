@@ -51,3 +51,20 @@ Rxjs 는 다양한 방식(동기, 비동기)들을 하나의 방식으로 처리
 * **Subscription**
 * Subject
 * Scheduler
+
+## Rxjs 의 사용 패턴
+
+1. 모든 데이터를 Observable 로 만든다.
+2. Observable 데이터에 Operator(map, filter) 를 적용하여 데이터를 변형한다.
+3. 원하는 데이터를 받아 처리하는 Observer 를 만든다.
+
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZmxvd2NoYXJ0IFxuICAgICAgICBzdWJncmFwaCAgICBcbiAgICAgICAgICAgIE9ic2VydmFibGUgLS0-IFNbc3Vic2NyaWJlXSAtLT4gT2JzZXJ2ZXJcbiAgICAgICAgZW5kXG4gICAgICAgIFNbc3Vic2NyaWJlXSAtLT4gc3Vic2NyaXB0aW9uIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjpmYWxzZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOmZhbHNlfQ)](https://mermaid.live/edit#eyJjb2RlIjoiZmxvd2NoYXJ0IFxuICAgICAgICBzdWJncmFwaCAgICBcbiAgICAgICAgICAgIE9ic2VydmFibGUgLS0-IFNbc3Vic2NyaWJlXSAtLT4gT2JzZXJ2ZXJcbiAgICAgICAgZW5kXG4gICAgICAgIFNbc3Vic2NyaWJlXSAtLT4gc3Vic2NyaXB0aW9uIiwibWVybWFpZCI6IntcbiAgXCJ0aGVtZVwiOiBcImRlZmF1bHRcIlxufSIsInVwZGF0ZUVkaXRvciI6ZmFsc2UsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjpmYWxzZX0)
+
+```mermaid
+flowchart 
+        subgraph    
+            Observable --> S[subscribe] --> Observer
+        end
+        S[subscribe] --> subscription
+```
+
