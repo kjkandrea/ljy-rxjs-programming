@@ -45,9 +45,9 @@ Rxjs 는 다양한 방식(동기, 비동기)들을 하나의 방식으로 처리
 
 ## Rxjs 의 주요개념
 
-* Observable
-* Operator
-* Observer
-* Subscription
+* **Observable**
+* **Operator**
+* **Observer**
+* **Subscription**
 * Subject
 * Scheduler
