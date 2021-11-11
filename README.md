@@ -45,3 +45,11 @@ from 은 까다롭지않은 아이라 옵저버블로 변환할 수 있을 만�
 6. 배열 유사 타입 (ArrayLike)
 
 ArrayLike 는? 숫자 타입의 length 속성있으면 충족
+
+### `fromEvent`
+
+fromEvent 는 브라우저 이벤트를 옵저버블로 바꿀때 사용한다.
+
+고 하는데 직접해보기 귀찮아서 패스
+
+http://jsfiddle.net/1001monkeys/5kv4wug2/
