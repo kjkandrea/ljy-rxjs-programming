@@ -30,3 +30,18 @@ RxJS 프로그래밍 (이종욱, 안재하 저) 코드필기
 ### 리액티브 선언문
 
 https://www.reactivemanifesto.org/ko  
+
+## 생성 함수
+
+### `from`
+
+from 은 까다롭지않은 아이라 옵저버블로 변환할 수 있을 만한 객체들은 모두 옵저버블로 반환해준다!
+
+1. 옵저버블 (Observable)
+2. 배열 (Array)
+3. 프로미스 (Promise)
+4. 이터러블 (Iterable)
+5. 문자열 (string)
+6. 배열 유사 타입 (ArrayLike)
+
+ArrayLike 는? 숫자 타입의 length 속성있으면 충족
