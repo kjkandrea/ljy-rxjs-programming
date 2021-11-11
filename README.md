@@ -53,3 +53,11 @@ fromEvent 는 브라우저 이벤트를 옵저버블로 바꿀때 사용한다.
 고 하는데 직접해보기 귀찮아서 패스
 
 http://jsfiddle.net/1001monkeys/5kv4wug2/
+
+### `defer`
+
+subscribed 된 시점에 평가하고싶을때 사용하는 것. 프라미스 다룰 때 쓸듯?
+
+https://stackoverflow.com/questions/38764578/rxjs-understanding-defer?answertab=active#tab-top
+
+
