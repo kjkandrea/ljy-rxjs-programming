@@ -4,7 +4,7 @@ range(1, 20).pipe(
 	groupBy(
 		x =>
 			x % 2 !== 0,
-		x => x * 3
+		x => x * 3,
 	),
 	mergeMap(
 		groupOb =>
