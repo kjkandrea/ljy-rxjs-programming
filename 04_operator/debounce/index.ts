@@ -1,3 +1,13 @@
-import { range } from "rxjs";
+import { fromEvent, take } from "rxjs";
 
-range(1, 10).subscribe(console.log);
+const inputEl = document.getElementById('debounce-input') as HTMLInputElement;
+const inputKeypress = fromEvent(inputEl, 'keypress');
+
+inputKeypress.pipe(
+	take(Infinity)
+).subscribe({
+ next: e => {
+ 	const { value } = e.target as HTMLInputElement
+ 	console.log(value)
+ }
+})
