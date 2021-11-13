@@ -74,4 +74,7 @@ https://stackoverflow.com/questions/38764578/rxjs-understanding-defer?answertab=
 
 ![1772aafebb651ac6c (1)](https://user-images.githubusercontent.com/32591477/141607239-3db9d32b-a92d-401c-bfe3-0bf30541548b.jpeg)
 
+### scan
+
+scan 연산자는 내부 옵저버블 안에 초깃값을 저장한 후 내부 옵저버블을 다시 구독할때 활용한다.
 
