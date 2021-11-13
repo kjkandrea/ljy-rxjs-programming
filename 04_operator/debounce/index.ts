@@ -1,13 +1,17 @@
-import { fromEvent, take } from "rxjs";
+import { fromEvent, debounceTime } from "rxjs";
 
 const inputEl = document.getElementById('debounce-input') as HTMLInputElement;
-const inputKeypress = fromEvent(inputEl, 'keypress');
+const inputEvent= fromEvent(inputEl, 'input');
 
-inputKeypress.pipe(
-	take(Infinity)
+const printEl = document.getElementById('print') as HTMLElement;
+const print = (content: string) => printEl.innerHTML = content
+
+inputEvent.pipe(
+	debounceTime(250)
 ).subscribe({
  next: e => {
+ 	console.log('event')
  	const { value } = e.target as HTMLInputElement
- 	console.log(value)
+	print(value)
  }
-})
+});
