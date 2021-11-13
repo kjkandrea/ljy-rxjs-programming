@@ -70,4 +70,8 @@ https://stackoverflow.com/questions/38764578/rxjs-understanding-defer?answertab=
 * `from` : 이미 실행중이거나 완료한 프로미스를 옵저버블로 만들 때 적합
 * `defer` : 프로미스 실행 시점(프로미스 객체 생성 시점)이 구독하는 시점 이어야 할대
 
+### mergeMap
+
+![1772aafebb651ac6c (1)](https://user-images.githubusercontent.com/32591477/141607239-3db9d32b-a92d-401c-bfe3-0bf30541548b.jpeg)
+
 
