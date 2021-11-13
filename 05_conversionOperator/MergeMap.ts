@@ -18,7 +18,7 @@ const requests2 = [
 	getPromise(300, { data: 3 }),
 	getPromise(100, { data: 4 }),
 	getPromise(500, { data: 5 }),
-	getPromise(600, { data: 5 }),
+	getPromise(600, { data: 6 }),
 ]
 
 // from(requests2).pipe(mergeMap(v => v)).subscribe(console.log)
