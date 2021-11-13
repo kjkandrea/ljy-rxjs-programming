@@ -1,9 +1,8 @@
 {
   "name": "ljy-rxjs-programming",
   "description": "RxJS 프로그래밍 (이종욱, 안재하 저) 코드필기",
-  "main": "index.js",
   "scripts": {
-    "start": "nodemon --config nodemon.json 03_creator/ThrowError.ts"
+    "start": "nodemon --config nodemon.json 04_operator/FirstLast.ts"
   },
   "dependencies": {
     "rxjs": "^7.4.0"
